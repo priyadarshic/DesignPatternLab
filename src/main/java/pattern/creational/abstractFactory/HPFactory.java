@@ -15,10 +15,10 @@ public class HPFactory implements AbstractFactory{
                 return new Laptop("Hewlett Packard");
 
             case SERVER:
-                break;
+                return new Server("Hewlett Packard");
+
             default:
                 return null;
         }
-        return null;
     }
 }

@@ -13,10 +13,10 @@ public class ToshibaFactory implements AbstractFactory{
                 return new Laptop("Toshiba");
 
             case SERVER:
-                break;
+                return new Server("Toshiba");
+
             default:
                 return null;
         }
-        return null;
     }
 }
