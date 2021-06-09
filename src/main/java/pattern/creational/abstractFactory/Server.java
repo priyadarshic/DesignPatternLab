@@ -1,3 +1,8 @@
+/*
+ * Copyright (c) 2021. Copyright belongs to Author @PChaudhuri.
+ * Maybe used for Non-commercial purpose only with Credits and link to GitHub repository
+ */
+
 package pattern.creational.abstractFactory;
 
 
@@ -24,22 +29,25 @@ public class Server implements IComputer {
     }
 
     @Override
-    public void shutDown() {
+    public boolean shutDown() {
         System.out.println("Shutting Down... " );
         power = false;
+        return this.power;
     }
 
     @Override
-    public void powerOn() {
+    public boolean powerOn() {
         System.out.println("System Booting Up..." );
-
+        power = true;
+        return this.power;
     }
 
     @Override
-    public void restart() {
+    public boolean restart() {
         System.out.println("Restarting..." );
         shutDown();
         powerOn();
+        return this.power;
     }
 
     @Override

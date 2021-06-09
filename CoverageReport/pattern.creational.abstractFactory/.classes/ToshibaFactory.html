@@ -1,0 +1,138 @@
+
+
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html id="htmlId">
+<head>
+  <title>Coverage Report :: ToshibaFactory</title>
+  <style type="text/css">
+    @import "../../.css/coverage.css";
+  </style>
+</head>
+
+<body>
+<div class="header"></div>
+
+<div class="content">
+<div class="breadCrumbs">
+    [ <a href="../../index.html">all classes</a> ]
+    [ <a href="../index.html">pattern.creational.abstractFactory</a> ]
+</div>
+
+<h1>Coverage Summary for Class: ToshibaFactory (pattern.creational.abstractFactory)</h1>
+
+<table class="coverageStats">
+
+<tr>
+  <th class="name">Class</th>
+<th class="coverageStat 
+">
+  Method, %
+</th>
+<th class="coverageStat 
+">
+  Line, %
+</th>
+</tr>
+<tr>
+  <td class="name">ToshibaFactory</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 2)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 6)
+  </span>
+</td>
+</tr>
+  <tr>
+    <td class="name">ToshibaFactory$1</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 1)
+  </span>
+</td>
+  </tr>
+<tr>
+  <td class="name"><strong>total</strong></td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 3)
+  </span>
+</td>
+<td class="coverageStat">
+  <span class="percent">
+    0%
+  </span>
+  <span class="absValue">
+    (0/ 7)
+  </span>
+</td>
+</tr>
+</table>
+
+<br/>
+<br/>
+
+
+<div class="sourceCode"><i>1</i>&nbsp;/*
+<i>2</i>&nbsp; * Copyright (c) 2021.
+<i>3</i>&nbsp; * All Intellectual Property Rights to this File/Digital Product belong to the @Author
+<i>4</i>&nbsp; * @PriyadarshiChaudhuri. Contact priyadarshi.c@gmail.com for enquiries.
+<i>5</i>&nbsp; * This File maybe used for Non-commercial purpose only with Credits and link to GitHub repository.
+<i>6</i>&nbsp; */
+<i>7</i>&nbsp;
+<i>8</i>&nbsp;package pattern.creational.abstractFactory;
+<i>9</i>&nbsp;
+<b class="nc"><i>10</i>&nbsp;public class ToshibaFactory implements AbstractFactory{</b>
+<i>11</i>&nbsp;
+<i>12</i>&nbsp;    @Override
+<i>13</i>&nbsp;    public IComputer createComputer(ComputerType type) {
+<i>14</i>&nbsp;
+<b class="nc"><i>15</i>&nbsp;        switch(type){</b>
+<i>16</i>&nbsp;            case DESKTOP:
+<b class="nc"><i>17</i>&nbsp;                return new Desktop(&quot;Toshiba&quot;);</b>
+<i>18</i>&nbsp;
+<i>19</i>&nbsp;            case LAPTOP:
+<b class="nc"><i>20</i>&nbsp;                return new Laptop(&quot;Toshiba&quot;);</b>
+<i>21</i>&nbsp;
+<i>22</i>&nbsp;            case SERVER:
+<b class="nc"><i>23</i>&nbsp;                return new Server(&quot;Toshiba&quot;);</b>
+<i>24</i>&nbsp;
+<i>25</i>&nbsp;            default:
+<b class="nc"><i>26</i>&nbsp;                return null;</b>
+<i>27</i>&nbsp;        }
+<i>28</i>&nbsp;    }
+<i>29</i>&nbsp;}
+</div>
+</div>
+
+<div class="footer">
+    
+    <div style="float:right;">generated on 2021-06-10 00:37</div>
+</div>
+</body>
+</html>

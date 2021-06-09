@@ -1,3 +1,10 @@
+/*
+ * Copyright (c) 2021.
+ * All Intellectual Property Rights to this File/Digital Product belong to the @Author
+ * @PriyadarshiChaudhuri. Contact priyadarshi.c@gmail.com for enquiries.
+ * This File maybe used for Non-commercial purpose only with Credits and link to GitHub repository.
+ */
+
 package pattern.creational.abstractFactory;
 
 public class Desktop implements IComputer {
@@ -23,22 +30,25 @@ public class Desktop implements IComputer {
     }
 
     @Override
-    public void shutDown() {
+    public boolean shutDown() {
         System.out.println("Shutting Down... " );
         power = false;
+        return this.power;
     }
 
     @Override
-    public void powerOn() {
+    public boolean powerOn() {
         System.out.println("System Booting Up..." );
-
+        power = true;
+        return this.power;
     }
 
     @Override
-    public void restart() {
+    public boolean restart() {
         System.out.println("Restarting..." );
         shutDown();
         powerOn();
+        return this.power;
     }
 
     @Override
