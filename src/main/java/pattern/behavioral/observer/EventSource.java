@@ -15,6 +15,7 @@ public class EventSource extends Observable implements Runnable {
             final BufferedReader br = new BufferedReader(isr);
             String response = "";
             while (!(response.equalsIgnoreCase("quit"))) {
+                System.out.println("Enter Text >");
                 response = br.readLine();
 
                 setChanged();       //Marks this Observable object as having been changed;
