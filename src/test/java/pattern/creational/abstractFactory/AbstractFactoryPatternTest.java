@@ -7,12 +7,12 @@
 
 package pattern.creational.abstractFactory;
 
-public interface IComputer
-{
-    public void showConfig();
-    public boolean shutDown();
-    public boolean powerOn();
-    public boolean restart();
-    public ComputerType getType();
+import junit.framework.TestCase;
 
+public class AbstractFactoryPatternTest extends TestCase {
+
+    public void testMain() {
+
+        AbstractFactoryPattern.main(new String[]{""});
+    }
 }

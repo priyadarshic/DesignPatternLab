@@ -1,6 +1,11 @@
-package pattern.behavioral.observer;
+/*
+ * Copyright (c) 2021.
+ * All Intellectual Property Rights to this File/Digital Product belong to the @Author
+ * @PriyadarshiChaudhuri. Contact priyadarshi.c@gmail.com for enquiries.
+ * This File maybe used for Non-commercial purpose only with Credits and link to GitHub repository.
+ */
 
-//This is a class.
+package pattern.behavioral.observer;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -27,4 +32,4 @@ public class EventSource extends Observable implements Runnable {
             e.printStackTrace();
         }
     }
-}// End of the Eventsource class.
+}// End of Eventsource class.

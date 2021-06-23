@@ -1,21 +1,20 @@
 /*
- * Copyright (c) 2021.
- * All Intellectual Property Rights to this File/Digital Product belong to the @Author
- * @PriyadarshiChaudhuri. Contact priyadarshi.c@gmail.com for enquiries.
- * This File maybe used for Non-commercial purpose only with Credits and link to GitHub repository.
+ * Copyright (c) 2021. Copyright belongs to Author @PChaudhuri.
+ * Maybe used for Non-commercial purpose only with Credits and link to GitHub repository
  */
 
 package pattern.creational.abstractFactory;
 
-public class Desktop implements IComputer {
 
-    private ComputerType computerType = ComputerType.DESKTOP;
+public class Server implements IComputer {
+
+    private ComputerType computerType = ComputerType.SERVER;
     private String brand = null;
-    private String RAM = "4GB";
-    private String HDD = "1TB";
+    private String RAM = "16GB";
+    private String HDD = "128TB";
     private boolean power = false;
 
-    public Desktop(String brand){
+    public Server(String brand){
         this.brand = brand;
     }
 
@@ -56,3 +55,4 @@ public class Desktop implements IComputer {
         return computerType;
     }
 }
+
