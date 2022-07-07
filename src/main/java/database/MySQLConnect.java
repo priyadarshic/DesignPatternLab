@@ -9,6 +9,12 @@ public class MySQLConnect {
 
     private static String url = "jdbc:mysql://localhost/world";
 
+    public static void main(String[] args) throws SQLException, ClassNotFoundException {
+
+        Connection conn = getConnection();
+        System.out.println(conn.getCatalog());
+    }
+
 
     public static Connection getConnection() throws SQLException, ClassNotFoundException {
 

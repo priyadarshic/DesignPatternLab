@@ -14,10 +14,10 @@ public class ObserverPatternDemo {
         final EventSource eventSource = new EventSource();
 
         // create first observer
-        final EventObserver channel1 = new EventObserver("ChannelOne");
+        final EventObserver channel1 = new EventObserver("Channel One");
 
         // create second observer
-        final EventObserver channelX = new EventObserver("ChannelX");
+        final EventObserver channelX = new EventObserver("Channel XYZ");
 
         // subscribe the observer to the event source
         eventSource.addObserver(channelX);

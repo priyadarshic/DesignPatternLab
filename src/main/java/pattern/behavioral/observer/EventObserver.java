@@ -20,9 +20,10 @@ public class EventObserver implements Observer {
     }
 
     public void update(Observable obj, Object arg) {
+
         if (arg instanceof String) {
             resp = (String) arg;
-            System.out.println( observerName + " Received Response: " + resp );
+            System.out.println( observerName + " :=> Received Response: " + resp );
         }
     }
 }

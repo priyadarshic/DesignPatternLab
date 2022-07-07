@@ -1,6 +1,7 @@
 package pattern.creational.factory;
 
 public class NotificationFactory {
+
     public INotification createNotificationClass(String channel)
     {
         channel = channel.toUpperCase();
